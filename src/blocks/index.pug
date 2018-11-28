@@ -1,0 +1,17 @@
+include head/head
+include header/header
+
+doctype html
+html(lang="ru")
+
+    block head
+        head
+            +head({
+                "title": "INKOCH - главная страница",
+                "author": "Roman",
+                "description": "Компания INKOCH"
+            })
+
+        body
+            block header
+                +header()
