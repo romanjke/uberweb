@@ -1,0 +1,16 @@
+mixin signup()
+    .form
+        .form__header Войти на сайт
+        form
+            input.form__input(type="text" name="REGISTER[LOGIN]" placeholder="Название (Имя)")
+            input.form__input(type="email" name="REGISTER[EMAIL]" placeholder="E-mail*")
+            input.form__input(type="password" name="REGISTER[PASSWORD]" placeholder="Пароль*")
+            input.form__input(type="password" name="REGISTER[CONFIRM_PASSWORD]" placeholder="Подтверждение пароля*")
+            .form__checkbox-container.signup__checkbox-container
+                label(for="REGISTER[REMEMBER_frm]").form__checkbox-label Я даю согласие на обработку персональных данных
+                    input.form__checkbox(type="checkbox" name="REGISTER[REMEMBER]" id="REGISTER[REMEMBER_frm]" value="Y")
+                    .form__checkmark
+                        .form__checkmark-icon
+                            +svg-icon('checkmark')
+            input.form__button.signup__button(type="submit" name="Login" value="зарегистрироваться")
+        a(href="#").form__sign-link.signup__signin-link войти

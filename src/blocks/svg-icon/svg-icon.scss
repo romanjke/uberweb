@@ -1,0 +1,38 @@
+.svg-icon {
+    display: inline-block;
+    height: 1em;
+    width: 1em;
+    fill: #fff;
+    stroke: #fff;
+    vertical-align: top;
+
+    &-logo {
+        width: 134.47px;
+        height: 46.75px;
+    }
+
+    &-scope {
+        width: 21px;
+        height: 17px;
+
+        .cls-1 {
+            isolation: isolate;
+        }
+
+        .cls-2 {
+            fill: #e8e8e8;
+        }
+
+        .cls-3 {
+            fill: #fff;
+            fill-rule: evenodd;
+        }
+    }
+
+    &-checkmark {
+        width: 14px;
+        height: 12px;
+        fill: $main-color;
+        stroke: $main-color;
+    }
+}

@@ -1,0 +1,15 @@
+mixin signin()
+    .form
+        .form__header Войти на сайт
+        form
+            input.form__input(type="email" name="USER_EMAIL" placeholder="E-mail")
+            input.form__input(type="password" name="USER_PASSWORD" placeholder="Пароль")
+            .form__checkbox-container.signin__checkbox-container
+                label(for="USER_REMEMBER_frm").form__checkbox-label Запомнить пароль на этом сайте
+                    input.form__checkbox(type="checkbox" name="USER_REMEMBER" id="USER_REMEMBER_frm" value="Y")
+                    .form__checkmark
+                        .form__checkmark-icon
+                            +svg-icon('checkmark')
+            input.form__button.signin__button(type="submit" name="Login" value="войти")
+        a(href="#").signin__forgotpwd Забыли пароль?
+        a(href="#").form__sign-link.signin__signup-link Регистрация

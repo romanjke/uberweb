@@ -1,0 +1,17 @@
+mixin header()
+    header.header
+        .container
+            .row.header__inner
+                .header__logo
+                    +svg-icon('logo')
+                .header__main-menu
+                    +main-menu()
+                .header__main-search
+                    +main-search()
+                .header__auth
+                    .header__signin
+                        a(href="#").header__link.header__signin-link войти
+                        +signin()
+                    .header__signup
+                        a(href="#").header__link.header__signup-link регистрация
+                        +signup()

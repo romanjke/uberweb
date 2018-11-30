@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" viewBox="0 0 14 12">
+  <defs>
+    <style>
+      .cls-1 {
+        isolation: isolate;
+      }
+
+      .cls-2 {
+        fill: #32c787;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <title>checkmark</title>
+  <g id="Слой_2" data-name="Слой 2">
+    <g id="Фигура_2" data-name="Фигура 2" class="cls-1">
+      <g id="Фигура_2-2" data-name="Фигура 2">
+        <path class="cls-2" d="M13.76,0C8.9,2.19,5.81,8.77,5.81,8.77L3.92,5.53,0,7.62A16.24,16.24,0,0,1,6.05,12c1.42-2.3,5.81-7,8-7.41C13.17,2.92,13.64,1.57,13.76,0Z"/>
+      </g>
+    </g>
+  </g>
+</svg>

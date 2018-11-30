@@ -1,0 +1,44 @@
+.main-search {
+    display: flex;
+    position: relative;
+    width: 270px;
+    height: 40px;
+    background: $main-color;
+
+    /*&:hover {
+        background: red;
+    }*/
+
+    &__input {
+        width: 218px;
+        height: 40px;
+        border: none;
+        background-color: transparent;
+
+        &:focus {
+            background-color: #cef2e2;
+
+            + .main-search__button {
+                background-color: #cef2e2;
+
+                + .main-search__icon > .svg-icon-scope {
+                    stroke: $secondary-color;
+                }
+            }
+        }
+    }
+
+    &__button {
+        width: 52px;
+        height: 40px;
+        padding: 0;
+        border: none;
+        background-color: transparent;
+    }
+
+    &__icon {
+        @include center-y();
+        right: 15px;
+        cursor: pointer;
+    }
+}

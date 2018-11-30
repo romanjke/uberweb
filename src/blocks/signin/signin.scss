@@ -1,0 +1,23 @@
+.signin {
+    &__checkbox-container {
+        margin-bottom: 18px;
+        line-height: 19px;
+    }
+
+    &__button {
+        width: auto;
+        margin: 0 auto 22px;
+        padding: 0 70px;
+    }
+
+    &__forgotpwd {
+        display: block;
+        margin-bottom: 14px;
+        line-height: 1;
+        font-size: 0.875rem;
+        font-weight: 700;
+        color: #323944;
+        text-align: center;
+        text-decoration: none;
+    }
+}

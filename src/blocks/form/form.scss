@@ -1,0 +1,111 @@
+.form {
+    position: absolute;
+    top: 31px;
+    right: 0;
+    padding: 31px 21px 42px 23px;
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+    background-color: #fff;
+    transition: 0.5s;
+
+    &__header {
+        margin-bottom: 22px;
+        font-size: 1rem;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    &__input {
+        width: 238px;
+        height: 38px;
+        margin-bottom: 12px;
+        padding: 18px;
+        border: 1px solid #ebebeb;
+        font-size: 1rem;
+        color: #323944;
+    }
+
+    &__checkbox-container {
+        display: block;
+        position: relative;
+        min-height: 19px;
+        margin: 6px 0 18px;
+        padding-left: 35px;
+        font-size: 0.75rem;
+        line-height: 1.2;
+        cursor: pointer;
+        user-select: none;
+    }
+
+    &__checkbox {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+
+        &:checked {
+            ~ .form__checkmark {
+                border-color: $main-color;
+            }
+            ~ .form__checkmark > .form__checkmark-icon {
+                display: block;
+            }
+        }
+    }
+
+    &__checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 19px;
+        width: 19px;
+        border: 1px solid #ebebeb;
+    }
+
+    &__checkmark-icon {
+        display: none;
+        @include center-xy();
+        width: 14px;
+        height: 12px;
+    }
+
+    &__checkbox-label {
+        font-size: 0.75rem;
+        font-weight: 400;
+        color: #353535;
+        cursor: pointer;
+    }
+
+    &__button {
+        display: block;
+        width: 100%;
+        margin: 0 auto 14px;
+        border: none;
+        border-radius: 5px;
+        background-color: $main-color;
+        color: #fff;
+        font-size: 1rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        line-height: 40px;
+
+        &:hover {
+            background-color: $secondary-color;
+        }
+    }
+
+    &__sign-link {
+        display: block;
+        /*line-height: 1;*/
+        font-size: 0.875rem;
+        font-weight: 400;
+        color: #323944;
+        text-align: center;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
