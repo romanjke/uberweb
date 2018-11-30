@@ -677,3 +677,33 @@ ol {
 .signup__signin-link {
   font-weight: 700;
   text-transform: uppercase; }
+
+.hero {
+  min-height: 540px;
+  background: #fff url(../img/hero-bg.jpg) center/cover no-repeat; }
+  .hero__inner {
+    padding: 152px 0 0 82px; }
+  .hero__title {
+    color: #323944;
+    text-transform: uppercase; }
+  .hero__title-top {
+    font-size: 1.875rem;
+    margin-bottom: 22px; }
+  .hero__title-bottom {
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin-bottom: 68px; }
+  .hero__button {
+    width: 350px;
+    line-height: 65px;
+    border: #000;
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
+    font-size: 1.125rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #323944; }
+    .hero__button:hover {
+      background-color: #23282f; }

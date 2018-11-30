@@ -5,6 +5,7 @@ include main-menu/main-menu
 include main-search/main-search
 include signin/signin
 include signup/signup
+include hero/hero
 
 doctype html
 html(lang="ru")
@@ -20,3 +21,6 @@ html(lang="ru")
         body
             block header
                 +header()
+
+            block hero
+                +hero()

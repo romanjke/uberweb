@@ -1,0 +1,41 @@
+.hero {
+    min-height: 540px;
+    background: #fff url(../img/hero-bg.jpg) center/cover no-repeat;
+
+    &__inner {
+        padding: 152px 0 0 82px;
+    }
+
+    &__title {
+        color: #323944;
+        text-transform: uppercase;
+    }
+
+    &__title-top {
+        font-size: 1.875rem;
+        margin-bottom: 22px;
+    }
+
+    &__title-bottom {
+        font-size: 2.25rem;
+        font-weight: 700;
+        margin-bottom: 68px;
+    }
+
+    &__button {
+        width: 350px;
+        line-height: 65px;
+        border: #000;
+        border-radius: 5px;
+        font-size: 1.125rem;
+        font-weight: 700;
+        text-align: center;
+        text-transform: uppercase;
+        color: #fff;
+        background-color: #323944;
+
+        &:hover {
+            background-color: darken(#323944, 7%);
+        }
+    }
+}
