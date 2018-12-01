@@ -1,0 +1,21 @@
+mixin tabs(...items)
+    .tabs
+        .container
+            .row.tabs__caption-wrapper
+                ul.tabs__caption
+                    each item in items
+                        if(item.status == 'active')
+                            li.tabs__item.tabs__item--active= item.caption
+                        else
+                            li.tabs__item= item.caption
+                button.tabs__button.button все исполнители
+
+        each item in items
+            if(item.status == 'active')
+                .tabs__content.tabs__content--active
+                    .container
+                        +#{item.content}(item.var)
+            else
+                .tabs__content
+                    .container
+                        +#{item.content}(item.var)

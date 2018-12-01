@@ -1,0 +1,53 @@
+.performers {
+    padding: 80px 0 76px;
+
+    &__row {
+        margin-bottom: 30px;
+        justify-content: space-between;
+    }
+
+    &__item {
+        width: 270px;
+        padding: 13px 11px 50px;
+        border: 1px solid #f3f3f3;
+        box-shadow: 0px 2px 25.23px 3.77px rgba(79, 80, 80, 0.08);
+    }
+
+    &__image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 250px;
+        height: 164px;
+        margin-bottom: 46px;
+        background-color: #f3f3f3;
+    }
+
+    &__inner {
+        padding-left: 26px;
+    }
+
+    &__header {
+        font-size: 1.3125rem;
+        font-weight: 700;
+        color: #383838;
+    }
+
+    &__text {
+        font-size: 1rem;
+        font-weight: 600;
+        color: #323944;
+        margin-bottom: 50px;
+    }
+
+    &__footer {
+        font-size: 1rem;
+        font-weight: 400;
+        color: #383838;
+    }
+
+    &__duration {
+        font-weight: 700;
+        color: #5BD29F;
+    }
+}

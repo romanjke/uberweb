@@ -6,6 +6,8 @@ include main-search/main-search
 include signin/signin
 include signup/signup
 include hero/hero
+include performers/performers
+include tabs/tabs
 
 doctype html
 html(lang="ru")
@@ -24,3 +26,46 @@ html(lang="ru")
 
             block hero
                 +hero()
+
+            block performers
+                -
+                    var experts = [
+                                    [{img: 'expertpro.png', header: 'ЭкспертПро', text: 'экспертиза проектирование', footer: '1 год'},
+                                    {img: 'abazov.png', header: 'Абазов Алексей Хашаович', text: 'экспертиза', footer: '3 месяца'},
+                                    {img: 'construct.png', header: 'CONTRUST', text: 'экспертиза проектирование', footer: '1 год'},
+                                    {img: 'isk.png', header: 'ООО «ИСК»', text: 'экспертиза', footer: '5 месяцев'}],
+                                    [{img: 'isk.png', header: 'ЭкспертПро', text: 'экспертиза проектирование', footer: '1 год'},
+                                    {img: 'construct.png', header: 'Абазов Алексей Хашаович', text: 'экспертиза', footer: '3 месяца'},
+                                    {img: 'isk.png', header: 'CONTRUST', text: 'экспертиза проектирование', footer: '1 год'},
+                                    {img: 'expertpro.png', header: 'ООО «ИСК»', text: 'экспертиза', footer: '5 месяцев'}],
+                                    [{img: 'construct.png', header: 'Абазов Алексей Хашаович', text: 'экспертиза', footer: '3 месяца'},
+                                    {img: 'expertpro.png', header: 'ООО «ИСК»', text: 'экспертиза', footer: '5 месяцев'},
+                                    {img: 'abazov.png', header: 'ЭкспертПро', text: 'экспертиза проектирование', footer: '1 год'},
+                                    {img: 'construct.png', header: 'CONTRUST', text: 'экспертиза проектирование', footer: '1 год'}],
+                                ];
+                -
+                    var companies = [
+                                        [{img: 'construct.png', header: 'Абазов Алексей Хашаович', text: 'экспертиза', footer: '3 месяца'},
+                                        {img: 'abazov.png', header: 'ЭкспертПро', text: 'экспертиза проектирование', footer: '1 год'},
+                                        {img: 'expertpro.png', header: 'ООО «ИСК»', text: 'экспертиза', footer: '5 месяцев'},
+                                        {img: 'construct.png', header: 'CONTRUST', text: 'экспертиза проектирование', footer: '1 год'}],
+                                        [{img: 'expertpro.png', header: 'ЭкспертПро', text: 'экспертиза проектирование', footer: '1 год'},
+                                        {img: 'abazov.png', header: 'Абазов Алексей Хашаович', text: 'экспертиза', footer: '3 месяца'},
+                                        {img: 'isk.png', header: 'ООО «ИСК»', text: 'экспертиза', footer: '5 месяцев'},
+                                        {img: 'construct.png', header: 'CONTRUST', text: 'экспертиза проектирование', footer: '1 год'}],
+                                        [{img: 'isk.png', header: 'ЭкспертПро', text: 'экспертиза проектирование', footer: '1 год'},
+                                        {img: 'construct.png', header: 'Абазов Алексей Хашаович', text: 'экспертиза', footer: '3 месяца'},
+                                        {img: 'isk.png', header: 'CONTRUST', text: 'экспертиза проектирование', footer: '1 год'},
+                                        {img: 'expertpro.png', header: 'ООО «ИСК»', text: 'экспертиза', footer: '5 месяцев'}],
+                                    ];
+
+                +performers(experts, companies)
+
+            block scripts
+                script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js")
+
+                // build:js js/main.js
+                script(src="js/main.js")
+                // endbuild
+
+

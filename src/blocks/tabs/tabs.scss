@@ -1,0 +1,67 @@
+.tabs {
+    width: 100%;
+
+    &__caption-wrapper {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__caption {
+        display: flex;
+        /*width: 570px;*/
+        margin: 0;
+        padding: 0;
+        /*line-height: 40px;*/
+        align-items: center;
+        font-size: 0.9375rem;
+        font-weight: 600;
+        text-align: center;
+        /*background: #f3f3f3;*/
+    }
+
+    &__button {
+        padding: 0 38px;
+        border: 1px solid #323944;
+        text-transform: uppercase;
+
+        &:hover {
+            background-color: darken(#fff, 7%);
+        }
+    }
+
+    &__item {
+        position: relative;
+        width: 286px;
+        line-height: 40px;
+        /*padding: 18px 82px 18px 86px;*/
+        color: #323944;
+        text-transform: uppercase;
+        background: #f3f3f3;
+
+        &--active {
+            width: 280px;
+            line-height: 50px;
+            border-radius: 5px;
+            color: #fff;
+            background: $main-color;
+        }
+
+        &:hover {
+            cursor:pointer;
+        }
+    }
+
+    &__content {
+        /*display: none;  по умолчанию прячем все блоки */
+        display: block;
+        height: 0;
+        overflow: hidden;
+        background: #fff;
+
+        &--active {
+            /*display: block;  по умолчанию показываем нужный блок */
+            padding-top: 24px;
+            height: auto;
+        }
+    }
+}
