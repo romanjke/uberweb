@@ -7,6 +7,7 @@ include signin/signin
 include signup/signup
 include hero/hero
 include performers/performers
+include projects/projects
 include tabs/tabs
 
 doctype html
@@ -60,6 +61,63 @@ html(lang="ru")
                                     ];
 
                 +performers(experts, companies)
+
+            block projects
+                -
+                    var expertises = [
+                                        {
+                                            header: 'Информация о природно-климатических условиях площадки строительства, особенностях...',
+                                            text: {building_area: '300', floors: '5', land_area: '700'},
+                                            footer: {doc_types: ['Проектная', 'Рабочая документация'], participants_cnt: '7'},
+                                            aside: {price: '27 000 Р.', period: '2 месяца', date_create: '07.08.2018'}
+                                        },
+                                        {
+                                            header: 'Подготовка документов, подтверждающие право собственности на землю (или договор аренды)',
+                                            text: {building_area: '300', floors: '5', land_area: '700'},
+                                            footer: {doc_types: ['Изыскательные', 'Проектная', 'Рабочая документация'], participants_cnt: '2'},
+                                            aside: {price: '27 000 Р.', period: '4 дня', date_create: '07.08.2018'}
+                                        },
+                                        {
+                                            header: 'Определение свойств грунта, наличия и состава грунтовых вод, определение грунта основания...',
+                                            text: {building_area: '300', floors: '5', land_area: '700'},
+                                            footer: {doc_types: ['Изыскательные', 'Проектная', 'Рабочая документация'], participants_cnt: '2'},
+                                            aside: {price: '27 000 Р.', period: '4 дня', date_create: '07.08.2018'}
+                                        },
+                                        {
+                                            header: 'Разработка проектной документации для получения согласований и заключения экспертизы',
+                                            text: {building_area: '300', floors: '5', land_area: '700'},
+                                            footer: {doc_types: ['Проектная'], participants_cnt: '3'},
+                                            aside: {price: '27 000 Р.', period: '2 месяца', date_create: '07.08.2018'}
+                                        },
+                                    ];
+                -
+                    var design = [
+                                    {
+                                        header: 'Подготовка документов, подтверждающие право собственности на землю (или договор аренды)',
+                                        text: {building_area: '300', floors: '5', land_area: '700'},
+                                        footer: {doc_types: ['Изыскательные', 'Проектная', 'Рабочая документация'], participants_cnt: '2'},
+                                        aside: {price: '27 000 Р.', period: '4 дня', date_create: '07.08.2018'}
+                                    },
+                                    {
+                                        header: 'Информация о природно-климатических условиях площадки строительства, особенностях...',
+                                        text: {building_area: '300', floors: '5', land_area: '700'},
+                                        footer: {doc_types: ['Проектная', 'Рабочая документация'], participants_cnt: '7'},
+                                        aside: {price: '27 000 Р.', period: '2 месяца', date_create: '07.08.2018'}
+                                    },
+                                    {
+                                        header: 'Разработка проектной документации для получения согласований и заключения экспертизы',
+                                        text: {building_area: '300', floors: '5', land_area: '700'},
+                                        footer: {doc_types: ['Проектная'], participants_cnt: '3'},
+                                        aside: {price: '27 000 Р.', period: '2 месяца', date_create: '07.08.2018'}
+                                    },
+                                    {
+                                        header: 'Определение свойств грунта, наличия и состава грунтовых вод, определение грунта основания...',
+                                        text: {building_area: '300', floors: '5', land_area: '700'},
+                                        footer: {doc_types: ['Изыскательные', 'Проектная', 'Рабочая документация'], participants_cnt: '2'},
+                                        aside: {price: '27 000 Р.', period: '4 дня', date_create: '07.08.2018'}
+                                    },
+                                ];
+                +projects(expertises, design)
 
             block scripts
                 script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js")

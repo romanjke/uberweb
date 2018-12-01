@@ -1,0 +1,75 @@
+mixin projects(var1, var2)
+    section.projects
+        .container
+            h2.projects__title Недавно добавленные проекты
+
+        +tabs(
+            {
+                "btn_caption": 'все проекты',
+                "btn_class": 'projects__button'
+            },
+            {
+                "caption": "Экспертизы",
+                "content": "expertises",
+                "var": var1,
+                "status": ""
+            },
+            {
+                "caption": "Проектирование",
+                "content": "design",
+                "var": var2,
+                "status": "active"
+            }
+        )
+
+mixin expertises(data)
+    .projects__items-wrapper
+        each item in data
+            article.projects__item
+                .projects__col
+                    .projects__image
+                    .projects__inner
+                        header
+                            h3.projects__header= item.header
+                        .projects__text
+                            .projects__building-area Площадь - #[span= item.text.building_area] м#[sup 2]
+                            .projects__floors #[span= item.text.floors] этажей
+                            .projects__land-area Площадь земельного участка - #[span= item.text.land_area] м#[sup 2]
+                        footer.projects__footer
+                            ul.projects__doc-types
+                                each doc_type in item.footer.doc_types
+                                    li.projects__doc-type= doc_type
+                            .projects__participants-cnt Участвуют #[span= item.footer.participants_cnt] компании
+                aside.projects__aside
+                    .projects__price Стоимость #[span= item.aside.price]
+                    .projects__period Срок выполнения #[span= item.aside.period]
+                    .projects__date-create добавлена #[span= item.aside.date_create]
+                    button.button.projects__item-button Ответить
+
+    button Показать еще 12
+
+mixin design(data)
+    .projects__items-wrapper
+        each item in data
+            article.projects__item
+                .projects__col
+                    .projects__image
+                    .projects__inner
+                        header
+                            h3.projects__header= item.header
+                        .projects__text
+                            .projects__building-area Площадь - #[span= item.text.building_area] м#[sup 2]
+                            .projects__floors #[span= item.text.floors] этажей
+                            .projects__land-area Площадь земельного участка - #[span= item.text.land_area] м#[sup 2]
+                        footer.projects__footer
+                            ul.projects__doc-types
+                                each doc_type in item.footer.doc_types
+                                    li.projects__doc-type= doc_type
+                            .projects__participants-cnt Участвуют #[span= item.footer.participants_cnt] компании
+                aside.projects__aside
+                    .projects__price Стоимость #[span= item.aside.price]
+                    .projects__period Срок выполнения #[span= item.aside.period]
+                    .projects__date-create добавлена #[span= item.aside.date_create]
+                    button.button.projects__item-button Ответить
+
+    button.button.projects__more-button Показать еще 12

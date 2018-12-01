@@ -1,6 +1,16 @@
 .performers {
     padding: 80px 0 76px;
 
+    &__button {
+        width: 200px;
+        border: 1px solid #323944;
+        text-transform: uppercase;
+
+        &:hover {
+            background-color: darken(#ebebeb, 7%);
+        }
+    }
+
     &__row {
         margin-bottom: 30px;
         justify-content: space-between;
@@ -9,7 +19,7 @@
     &__item {
         width: 270px;
         padding: 13px 11px 50px;
-        border: 1px solid #f3f3f3;
+        border: 1px solid #f4f4f4;
         box-shadow: 0px 2px 25.23px 3.77px rgba(79, 80, 80, 0.08);
     }
 

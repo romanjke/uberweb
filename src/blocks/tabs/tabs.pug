@@ -1,4 +1,4 @@
-mixin tabs(...items)
+mixin tabs(btn, ...items)
     .tabs
         .container
             .row.tabs__caption-wrapper
@@ -8,7 +8,7 @@ mixin tabs(...items)
                             li.tabs__item.tabs__item--active= item.caption
                         else
                             li.tabs__item= item.caption
-                button.tabs__button.button все исполнители
+                button(class="button " + btn.btn_class)= btn.btn_caption
 
         each item in items
             if(item.status == 'active')

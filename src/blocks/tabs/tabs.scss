@@ -19,16 +19,6 @@
         /*background: #f3f3f3;*/
     }
 
-    &__button {
-        padding: 0 38px;
-        border: 1px solid #323944;
-        text-transform: uppercase;
-
-        &:hover {
-            background-color: darken(#fff, 7%);
-        }
-    }
-
     &__item {
         position: relative;
         width: 286px;
@@ -56,7 +46,7 @@
         display: block;
         height: 0;
         overflow: hidden;
-        background: #fff;
+        /*background: #fff;*/
 
         &--active {
             /*display: block;  по умолчанию показываем нужный блок */

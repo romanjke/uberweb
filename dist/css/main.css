@@ -711,6 +711,12 @@ ol {
 
 .performers {
   padding: 80px 0 76px; }
+  .performers__button {
+    width: 200px;
+    border: 1px solid #323944;
+    text-transform: uppercase; }
+    .performers__button:hover {
+      background-color: #d9d9d9; }
   .performers__row {
     margin-bottom: 30px;
     -webkit-box-pack: justify;
@@ -720,7 +726,7 @@ ol {
   .performers__item {
     width: 270px;
     padding: 13px 11px 50px;
-    border: 1px solid #f3f3f3;
+    border: 1px solid #f4f4f4;
     -webkit-box-shadow: 0px 2px 25.23px 3.77px rgba(79, 80, 80, 0.08);
             box-shadow: 0px 2px 25.23px 3.77px rgba(79, 80, 80, 0.08); }
   .performers__image {
@@ -787,12 +793,6 @@ ol {
     font-weight: 600;
     text-align: center;
     /*background: #f3f3f3;*/ }
-  .tabs__button {
-    padding: 0 38px;
-    border: 1px solid #323944;
-    text-transform: uppercase; }
-    .tabs__button:hover {
-      background-color: #ededed; }
   .tabs__item {
     position: relative;
     width: 286px;
@@ -815,7 +815,7 @@ ol {
     display: block;
     height: 0;
     overflow: hidden;
-    background: #fff; }
+    /*background: #fff;*/ }
     .tabs__content--active {
       /*display: block;  по умолчанию показываем нужный блок */
       padding-top: 24px;
@@ -831,3 +831,118 @@ ol {
   font-size: 0.9375rem;
   background-color: transparent;
   white-space: nowrap; }
+
+.projects {
+  padding: 82px 0;
+  background-color: #ebebeb; }
+  .projects__title {
+    margin: 0 0 43px;
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: #323944; }
+  .projects__button {
+    width: 200px;
+    border: 1px solid #323944;
+    font-weight: 600;
+    text-transform: uppercase; }
+    .projects__button:hover {
+      background-color: #d9d9d9; }
+  .projects__items-wrapper {
+    margin-bottom: 48px; }
+  .projects__item {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    height: 226px;
+    margin-bottom: 38px;
+    padding: 24px 33px 24px 22px;
+    -webkit-box-shadow: 0px 2px 3.92px 0.08px rgba(79, 80, 80, 0.08);
+            box-shadow: 0px 2px 3.92px 0.08px rgba(79, 80, 80, 0.08);
+    background-color: #fff; }
+  .projects__col {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+  .projects__image {
+    width: 168px;
+    height: 100%;
+    background-color: #f3f3f3; }
+  .projects__inner {
+    /*flex: 1;*/
+    width: 670px;
+    padding: 15px 0 0 35px; }
+  .projects__header {
+    margin: 0 0 25px;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #383838; }
+  .projects__text {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 20px; }
+  .projects__building-area {
+    margin-right: 13px; }
+  .projects__floors {
+    margin-right: 21px; }
+  .projects__doc-types {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 0 14px;
+    padding: 0;
+    color: #383838; }
+  .projects__doc-type {
+    margin-right: 10px;
+    padding: 0 22px;
+    -webkit-border-radius: 16px;
+            border-radius: 16px;
+    line-height: 32px;
+    background-color: #def7ec; }
+  .projects__participants-cnt {
+    color: #a6a6aa; }
+  .projects__aside {
+    padding-top: 15px;
+    text-align: right; }
+  .projects__price {
+    margin-bottom: 5px;
+    color: #383838; }
+    .projects__price span {
+      font-size: 1.125rem;
+      font-weight: 700;
+      color: #22c77f; }
+  .projects__period {
+    margin-bottom: 50px; }
+    .projects__period span {
+      font-size: 1.125rem;
+      font-weight: 700;
+      color: #383838; }
+  .projects__date-create {
+    margin-bottom: 14px;
+    color: #a6a6aa; }
+  .projects__item-button {
+    width: 156px;
+    border: 1px solid #636363;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #636363; }
+    .projects__item-button:hover {
+      background-color: #d9d9d9; }
+  .projects__more-button {
+    display: block;
+    width: 178px;
+    margin: 0 auto;
+    border: 1px solid #bababa;
+    font-size: 0.9375rem;
+    color: #888585; }
+    .projects__more-button:hover {
+      background-color: #d9d9d9; }
