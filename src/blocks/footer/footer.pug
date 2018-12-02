@@ -1,0 +1,24 @@
+mixin footer(data)
+    footer.footer
+        .container
+            .row.footer__inner
+                .footer__col
+                    .footer__logo
+                        +svg-icon('logo-footer')
+                    .footer__socials
+                        a(href="https://www.instagram.com/" target="_blank").footer__icon
+                            +svg-icon('instagram')
+                        a(href="https://vk.com/" target="_blank").footer__icon
+                            +svg-icon('vk')
+                        a(href="https://www.facebook.com/" target="_blank").footer__icon
+                            +svg-icon('facebook')
+                    .footer__copy &copy; 2018 «inkoch»
+
+                ul.row.footer__list
+                    each item in data
+                        li.footer__item #[span.footer__item-title= item.header]
+                            ul.footer__submenu
+                                each subitem in item.items
+                                    li.footer__submenu-item
+                                        a(href="#").footer__submenu-link= subitem
+

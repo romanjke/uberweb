@@ -9,6 +9,7 @@ include hero/hero
 include performers/performers
 include projects/projects
 include tabs/tabs
+include footer/footer
 
 doctype html
 html(lang="ru")
@@ -119,11 +120,36 @@ html(lang="ru")
                                 ];
                 +projects(expertises, design)
 
+            block footer
+                -
+                    var menus = [
+                            {
+                                header: 'Проектирование',
+                                items: ['Заказать проектирование', 'Выбрать исполнителя', 'Заявки на проектирование', 'Создать тендер', 'Услуги сторонних организаций', 'Безопасная сделка']
+                            },
+                            {
+                                header: 'Экспертизы',
+                                items: ['Заказать экспертизу', 'Выбрать исполнителя', 'Создать тендер', 'Безопасная сделка']
+                            },
+                            {
+                                header: 'Исполнители',
+                                items: ['Заявки на проектирование', 'Безопасная сделка']
+                            },
+                            {
+                                header: 'Аккаунт',
+                                items: ['Личный кабинет', 'Зарегистрироваться', 'Восстановить доступ', 'Экспертам', 'Заказчикам']
+                            },
+                            {
+                                header: 'Общая информация',
+                                items: ['О сайте', 'Поиск по сайту', 'Помощь', 'Правила', 'Контакты']
+                            }
+                    ]
+
+                +footer(menus)
+
             block scripts
                 script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js")
 
                 // build:js js/main.js
                 script(src="js/main.js")
                 // endbuild
-
-

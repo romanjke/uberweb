@@ -17,6 +17,7 @@
     }
 
     &__item {
+        position: relative;
         width: 270px;
         padding: 13px 11px 50px;
         border: 1px solid #f4f4f4;
@@ -51,6 +52,8 @@
     }
 
     &__footer {
+        position: absolute;
+        bottom: 50px;
         font-size: 1rem;
         font-weight: 400;
         color: #383838;

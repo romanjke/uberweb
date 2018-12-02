@@ -362,7 +362,8 @@ body {
   font-size: 1rem;
   font-weight: 400;
   font-style: normal;
-  line-height: 1; }
+  line-height: 1;
+  letter-spacing: -0.01em; }
 
 html {
   -webkit-box-sizing: border-box;
@@ -395,6 +396,24 @@ ol {
       -ms-flex-wrap: wrap;
           flex-wrap: wrap; }
 
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/OpenSans-Regular.ttf");
+  font-style: normal;
+  font-weight: 400; }
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/OpenSans-SemiBold.ttf");
+  font-style: normal;
+  font-weight: 600; }
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/OpenSans-Bold.ttf");
+  font-style: normal;
+  font-weight: 700; }
+
 .svg-icon {
   display: inline-block;
   height: 1em;
@@ -420,6 +439,21 @@ ol {
     height: 12px;
     fill: #5bd29f;
     stroke: #5bd29f; }
+  .svg-icon-logo-footer {
+    width: 57px;
+    height: 56px; }
+  .svg-icon-instagram {
+    width: 28px;
+    height: 28px;
+    fill: #bababa; }
+  .svg-icon-vk {
+    width: 28px;
+    height: 28px;
+    fill: #bababa; }
+  .svg-icon-facebook {
+    width: 28px;
+    height: 28px;
+    fill: #bababa; }
 
 .form {
   position: absolute;
@@ -724,6 +758,7 @@ ol {
         -ms-flex-pack: justify;
             justify-content: space-between; }
   .performers__item {
+    position: relative;
     width: 270px;
     padding: 13px 11px 50px;
     border: 1px solid #f4f4f4;
@@ -758,6 +793,8 @@ ol {
     color: #323944;
     margin-bottom: 50px; }
   .performers__footer {
+    position: absolute;
+    bottom: 50px;
     font-size: 1rem;
     font-weight: 400;
     color: #383838; }
@@ -946,3 +983,52 @@ ol {
     color: #888585; }
     .projects__more-button:hover {
       background-color: #d9d9d9; }
+
+.footer {
+  background-color: #323944; }
+  .footer__inner {
+    padding: 32px 15px; }
+  .footer__col {
+    margin-right: 50px; }
+  .footer__logo {
+    padding: 15px 22px 19px; }
+  .footer__socials {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 24px; }
+  .footer__icon {
+    margin-right: 10px; }
+    .footer__icon:last-child {
+      margin-right: 0; }
+  .footer__copy {
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: #fff; }
+  .footer__list {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    color: #fff; }
+  .footer__item {
+    margin-right: 35px; }
+    .footer__item:last-child {
+      margin-right: 0; }
+  .footer__item-title {
+    font-size: 0.9375rem;
+    font-weight: 600; }
+  .footer__submenu {
+    margin: 14px 0 0;
+    padding: 0;
+    font-size: 0.875rem; }
+  .footer__submenu-item {
+    margin-bottom: 12px; }
+  .footer__submenu-link {
+    color: #fff;
+    text-decoration: none; }
+    .footer__submenu-link:hover {
+      color: #999999; }

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="57" height="56" viewBox="0 0 57 56">
+  <defs>
+    <style>
+      .cls-1 {
+        isolation: isolate;
+      }
+
+      .cls-2 {
+        fill: #f4f4f6;
+      }
+    </style>
+  </defs>
+  <title>logo-footer</title>
+  <g id="Слой_2" data-name="Слой 2">
+    <g id="Векторный_смарт-объект_копия_2_Изображение" data-name="Векторный смарт-объект копия 2 Изображение">
+      <image id="Векторный_смарт-объект_копия_2_Изображение-2" data-name="Векторный смарт-объект копия 2 Изображение" width="40" height="37" transform="translate(8 10)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAlCAYAAAAwYKuzAAAACXBIWXMAAAsSAAALEgHS3X78AAACaElEQVRYR+2WTUgVURiGH+O2mI6LFqGLFkFoEAgRaUkuRCiJ2hdCQUWEC5Pau4lcVUpBSIREtOkHWrSwRUQLCaFNLoQopYWLkCS5VPe9H2gxLeZM3obrHXOCbjAPHM453/fO+d4580sYhvyNViqVL5ZK5dC38TT9etsm6pzcYFZyg1mpe4MFycppohRKzgVN1RKSLQKN1XLrpQDsThOl8L1Gbi9RjQ1TcC6YTxNtFOeCj2maNOr+HswNZiU3mJVMr4AEz4BmP35aS/gnNIRhmKb5p9T9Jc4NZuX/MCjZmGQ9kh2U7Ilk22KBj1/x4z7JBityfZI9lmyLn++Q7KFk05I9l6yzsphknT4+7XXbffyuZB0Vug7JHsDqDp4Gep0LpoAjwJxkca4XOOfHx4EzfpFm4D6w1bmgLFk38AE4DCwAO4EpyYa8fgiY8vFPwCHgrV/3FNDFKl3ACaj+HvwKOKLFftuBBC+89qifPwLeORe0xQLJbgOX4x6441zQX5FvJYW17sERYI9k96olJbsEtAHHnAvi/8Em4FpCOkBUo7L/hXPBnB8WgBHJViRbIarfAGsb/EJ0qU4C+xO5AnAVWAZuVsSXgQMJbbfvXybmSX4Aw0CLb8NACDWeYueCV8Ag0JNItQBviE6gQ7JbkjUC40C/ZKOStUp2AZgAZpwLJoEZYEKyQcl2SXZDslm/ZggUnQvm/Q90MS4WG/wMLPrxArAE4FwwBrz2MYDNRFvf44uOAGeBfc4FA8Ao0A/M+twk0O6Pbffz68B74Dyr3+wivqZnCfgG+bc4O7nBrOQGs5IbzEpBsiJ1zE+MFnKwWA2BHgAAAABJRU5ErkJggg=="/>
+    </g>
+    <g id="Прямоугольник_24_копия" data-name="Прямоугольник 24 копия" class="cls-1">
+      <g id="Прямоугольник_24_копия-2" data-name="Прямоугольник 24 копия">
+        <path class="cls-2" d="M56,1V55H1V1H56m1-1H0V56H57V0Z"/>
+      </g>
+    </g>
+  </g>
+</svg>
