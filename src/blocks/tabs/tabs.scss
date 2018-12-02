@@ -8,32 +8,43 @@
 
     &__caption {
         display: flex;
-        /*width: 570px;*/
+        width: 100%;
         margin: 0;
         padding: 0;
-        /*line-height: 40px;*/
         align-items: center;
         font-size: 0.9375rem;
         font-weight: 600;
         text-align: center;
-        /*background: #f3f3f3;*/
+
+        @media (min-width: 768px) {
+            width: 570px;
+        }
     }
 
     &__item {
         position: relative;
-        width: 286px;
-        line-height: 40px;
-        /*padding: 18px 82px 18px 86px;*/
+        width: 50%;
+        height: auto;
+        padding: 16px 0 12px;
         color: #323944;
         text-transform: uppercase;
         background: #f3f3f3;
 
+        @media (min-width: 768px) {
+            height: 40px;
+        }
+
         &--active {
-            width: 280px;
-            line-height: 50px;
+            width: 50%;
+            height: auto;
+            padding: 20px 0;
             border-radius: 5px;
             color: #fff;
             background: $main-color;
+
+            @media (min-width: 768px) {
+                height: 50px;
+            }
         }
 
         &:hover {
@@ -46,7 +57,6 @@
         display: block;
         height: 0;
         overflow: hidden;
-        /*background: #fff;*/
 
         &--active {
             /*display: block;  по умолчанию показываем нужный блок */

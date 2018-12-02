@@ -22,30 +22,41 @@
           </div>
           <div class="header__main-menu">
             <nav class="main-menu">
+              <div class="main-menu__icon">
+                <svg class="svg-icon svg-icon-hamburger">
+                  <use xlink:href="img/sprite.svg#hamburger"></use>
+                </svg>
+              </div>
               <ul class="main-menu__list">
                 <li class="main-menu__item"><a class="header__link main-menu__link" href="#">проектирование</a>
-                  <ul class="main-menu__submenu">
-                    <li class="main-menu__submenu-item"><a class="main-menu__submenu-link" href="#">Заказать проектирование</a></li>
-                    <li class="main-menu__submenu-item"><a class="main-menu__submenu-link" href="#">Выбрать исполнителя</a></li>
-                    <li class="main-menu__submenu-item"><a class="main-menu__submenu-link" href="#">Заявки на пректирование</a></li>
-                    <li class="main-menu__submenu-item"><a class="main-menu__submenu-link" href="#">Создать тендер</a></li>
-                    <li class="main-menu__submenu-item"><a class="main-menu__submenu-link" href="#">Услуги сторонних организаций</a></li>
-                    <li class="main-menu__submenu-item"><a class="main-menu__submenu-link" href="#">Безопасная сделка</a></li>
-                  </ul>
+                  <div class="main-menu__submenu-wrapper">
+                    <ul class="main-menu__submenu">
+                      <li class="main-menu__submenu-item"><a class="main-menu__submenu-link" href="#">Заказать проектирование</a></li>
+                      <li class="main-menu__submenu-item"><a class="main-menu__submenu-link" href="#">Выбрать исполнителя</a></li>
+                      <li class="main-menu__submenu-item"><a class="main-menu__submenu-link" href="#">Заявки на пректирование</a></li>
+                      <li class="main-menu__submenu-item"><a class="main-menu__submenu-link" href="#">Создать тендер</a></li>
+                      <li class="main-menu__submenu-item"><a class="main-menu__submenu-link" href="#">Услуги сторонних организаций</a></li>
+                      <li class="main-menu__submenu-item"><a class="main-menu__submenu-link" href="#">Безопасная сделка</a></li>
+                    </ul>
+                  </div>
                 </li>
                 <li class="main-menu__item"><a class="header__link main-menu__link" href="#">экспертизы</a>
-                  <ul class="main-menu__submenu">
-                    <li class="main-menu__submenu-item"><a class="main-menu__submenu-link" href="#">Заказать экспертизу</a></li>
-                    <li class="main-menu__submenu-item"><a class="main-menu__submenu-link" href="#">Выбрать исполнителя</a></li>
-                    <li class="main-menu__submenu-item"><a class="main-menu__submenu-link" href="#">Создать тендер</a></li>
-                    <li class="main-menu__submenu-item"><a class="main-menu__submenu-link" href="#">Безопасная сделка</a></li>
-                  </ul>
+                  <div class="main-menu__submenu-wrapper">
+                    <ul class="main-menu__submenu">
+                      <li class="main-menu__submenu-item"><a class="main-menu__submenu-link" href="#">Заказать экспертизу</a></li>
+                      <li class="main-menu__submenu-item"><a class="main-menu__submenu-link" href="#">Выбрать исполнителя</a></li>
+                      <li class="main-menu__submenu-item"><a class="main-menu__submenu-link" href="#">Создать тендер</a></li>
+                      <li class="main-menu__submenu-item"><a class="main-menu__submenu-link" href="#">Безопасная сделка</a></li>
+                    </ul>
+                  </div>
                 </li>
                 <li class="main-menu__item"><a class="header__link main-menu__link" href="#">исполнители</a>
-                  <ul class="main-menu__submenu">
-                    <li class="main-menu__submenu-item"><a class="main-menu__submenu-link" href="#">Заявки на пректирование</a></li>
-                    <li class="main-menu__submenu-item"><a class="main-menu__submenu-link" href="#">Безопасная сделка</a></li>
-                  </ul>
+                  <div class="main-menu__submenu-wrapper">
+                    <ul class="main-menu__submenu">
+                      <li class="main-menu__submenu-item"><a class="main-menu__submenu-link" href="#">Заявки на пректирование</a></li>
+                      <li class="main-menu__submenu-item"><a class="main-menu__submenu-link" href="#">Безопасная сделка</a></li>
+                    </ul>
+                  </div>
                 </li>
               </ul>
             </nav>
@@ -63,49 +74,53 @@
           </div>
           <div class="header__auth">
             <div class="header__signin"><a class="header__link header__signin-link" href="#">войти</a>
-              <div class="form">
-                <div class="form__header">Войти на сайт</div>
-                <form>
-                  <input class="form__input" type="email" name="USER_EMAIL" placeholder="E-mail"/>
-                  <input class="form__input" type="password" name="USER_PASSWORD" placeholder="Пароль"/>
-                  <div class="form__checkbox-container signin__checkbox-container">
-                    <label class="form__checkbox-label" for="USER_REMEMBER_frm">Запомнить пароль на этом сайте
-                      <input class="form__checkbox" type="checkbox" name="USER_REMEMBER" id="USER_REMEMBER_frm" value="Y"/>
-                      <div class="form__checkmark">
-                        <div class="form__checkmark-icon">
-                          <svg class="svg-icon svg-icon-checkmark">
-                            <use xlink:href="img/sprite.svg#checkmark"></use>
-                          </svg>
+              <div class="header__form signin__form">
+                <div class="form">
+                  <div class="form__header">Войти на сайт</div>
+                  <form>
+                    <input class="form__input" type="email" name="USER_EMAIL" placeholder="E-mail"/>
+                    <input class="form__input" type="password" name="USER_PASSWORD" placeholder="Пароль"/>
+                    <div class="form__checkbox-container signin__checkbox-container">
+                      <label class="form__checkbox-label" for="USER_REMEMBER_frm">Запомнить пароль на этом сайте
+                        <input class="form__checkbox" type="checkbox" name="USER_REMEMBER" id="USER_REMEMBER_frm" value="Y"/>
+                        <div class="form__checkmark">
+                          <div class="form__checkmark-icon">
+                            <svg class="svg-icon svg-icon-checkmark">
+                              <use xlink:href="img/sprite.svg#checkmark"></use>
+                            </svg>
+                          </div>
                         </div>
-                      </div>
-                    </label>
-                  </div>
-                  <input class="form__button signin__button" type="submit" name="Login" value="войти"/>
-                </form><a class="signin__forgotpwd" href="#">Забыли пароль?</a><a class="form__sign-link signin__signup-link" href="#">Регистрация</a>
+                      </label>
+                    </div>
+                    <input class="form__button signin__button" type="submit" name="Login" value="войти"/>
+                  </form><a class="signin__forgotpwd" href="#">Забыли пароль?</a><a class="form__sign-link signin__signup-link" href="#">Регистрация</a>
+                </div>
               </div>
             </div>
             <div class="header__signup"><a class="header__link header__signup-link" href="#">регистрация</a>
-              <div class="form">
-                <div class="form__header">Войти на сайт</div>
-                <form>
-                  <input class="form__input" type="text" name="REGISTER[LOGIN]" placeholder="Название (Имя)"/>
-                  <input class="form__input" type="email" name="REGISTER[EMAIL]" placeholder="E-mail*"/>
-                  <input class="form__input" type="password" name="REGISTER[PASSWORD]" placeholder="Пароль*"/>
-                  <input class="form__input" type="password" name="REGISTER[CONFIRM_PASSWORD]" placeholder="Подтверждение пароля*"/>
-                  <div class="form__checkbox-container signup__checkbox-container">
-                    <label class="form__checkbox-label" for="REGISTER[REMEMBER_frm]">Я даю согласие на обработку персональных данных
-                      <input class="form__checkbox" type="checkbox" name="REGISTER[REMEMBER]" id="REGISTER[REMEMBER_frm]" value="Y"/>
-                      <div class="form__checkmark">
-                        <div class="form__checkmark-icon">
-                          <svg class="svg-icon svg-icon-checkmark">
-                            <use xlink:href="img/sprite.svg#checkmark"></use>
-                          </svg>
+              <div class="header__form signup__form">
+                <div class="form">
+                  <div class="form__header">Войти на сайт</div>
+                  <form>
+                    <input class="form__input" type="text" name="REGISTER[LOGIN]" placeholder="Название (Имя)"/>
+                    <input class="form__input" type="email" name="REGISTER[EMAIL]" placeholder="E-mail*"/>
+                    <input class="form__input" type="password" name="REGISTER[PASSWORD]" placeholder="Пароль*"/>
+                    <input class="form__input" type="password" name="REGISTER[CONFIRM_PASSWORD]" placeholder="Подтверждение пароля*"/>
+                    <div class="form__checkbox-container signup__checkbox-container">
+                      <label class="form__checkbox-label" for="REGISTER[REMEMBER_frm]">Я даю согласие на обработку персональных данных
+                        <input class="form__checkbox" type="checkbox" name="REGISTER[REMEMBER]" id="REGISTER[REMEMBER_frm]" value="Y"/>
+                        <div class="form__checkmark">
+                          <div class="form__checkmark-icon">
+                            <svg class="svg-icon svg-icon-checkmark">
+                              <use xlink:href="img/sprite.svg#checkmark"></use>
+                            </svg>
+                          </div>
                         </div>
-                      </div>
-                    </label>
-                  </div>
-                  <input class="form__button signup__button" type="submit" name="Login" value="зарегистрироваться"/>
-                </form><a class="form__sign-link signup__signin-link" href="#">войти</a>
+                      </label>
+                    </div>
+                    <input class="form__button signup__button" type="submit" name="Login" value="зарегистрироваться"/>
+                  </form><a class="form__sign-link signup__signin-link" href="#">войти</a>
+                </div>
               </div>
             </div>
           </div>
@@ -113,8 +128,8 @@
       </div>
     </header>
     <section class="hero">
-      <div class="container">
-        <div class="hero__inner">
+      <div class="hero__inner">
+        <div class="container">
           <div class="hero__title">
             <div class="hero__title-top">не знаете с чего начать?</div>
             <div class="hero__title-bottom">профессионалы подскажут</div>

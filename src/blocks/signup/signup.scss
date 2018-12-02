@@ -7,4 +7,10 @@
         font-weight: 700;
         text-transform: uppercase;
     }
+
+    &__form {
+        @media (min-width: 768px) {
+            right: 0;
+        }
+    }
 }

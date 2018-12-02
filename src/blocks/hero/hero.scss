@@ -1,9 +1,14 @@
 .hero {
-    min-height: 540px;
-    background: #fff url(../img/hero-bg.jpg) center/cover no-repeat;
+    margin-top : 58.75px;
 
     &__inner {
-        padding: 152px 0 0 82px;
+        min-height: 540px;
+        padding-top: 152px;
+        background: #fff url(../img/hero-bg.jpg) center/cover no-repeat;
+
+        @media (min-width: 768px) {
+            padding-left: 82px;
+        }
     }
 
     &__title {
@@ -12,19 +17,28 @@
     }
 
     &__title-top {
-        font-size: 1.875rem;
+        font-size: 1.5rem;
         margin-bottom: 22px;
+
+        @media (min-width: 768px) {
+            font-size: 1.875rem;
+        }
     }
 
     &__title-bottom {
-        font-size: 2.25rem;
+        font-size: 1.875rem;
         font-weight: 700;
         margin-bottom: 68px;
+
+        @media (min-width: 768px) {
+            font-size: 2.25rem;
+        }
     }
 
     &__button {
-        width: 350px;
-        line-height: 65px;
+        /*width: 350px;*/
+        padding: 20px 35px;
+        /*line-height: 65px;*/
         border: #000;
         border-radius: 5px;
         font-size: 1.125rem;
@@ -33,6 +47,10 @@
         text-transform: uppercase;
         color: #fff;
         background-color: #323944;
+
+        @media (min-width: 768px) {
+            padding: 26px 40px;
+        }
 
         &:hover {
             background-color: darken(#323944, 7%);

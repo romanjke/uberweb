@@ -1,19 +1,32 @@
 .projects {
-    padding: 82px 0;
+    padding: 42px 0;
     background-color: #ebebeb;
+
+    @media (min-width: 1024px) {
+        padding: 82px 0;
+    }
 
     &__title {
         margin: 0 0 43px;
-        font-size: 1.875rem;
+        font-size: 1.5rem;
         font-weight: 700;
         color: #323944;
+
+        @media (min-width: 768px) {
+            font-size: 1.875rem;
+        }
     }
 
     &__button {
         width: 200px;
+        margin-top: 24px;
         border: 1px solid #323944;
         font-weight: 600;
         text-transform: uppercase;
+
+        @media (min-width: 800px) {
+            margin-top: 0;
+        }
 
         &:hover {
             background-color: darken(#ebebeb, 7%);
@@ -27,8 +40,9 @@
     &__item {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
         width: 100%;
-        height: 226px;
+        min-height: 226px;
         margin-bottom: 38px;
         padding: 24px 33px 24px 22px;
         box-shadow: 0px 2px 3.92px 0.08px rgba(79, 80, 80, 0.08);
@@ -37,18 +51,33 @@
 
     &__col {
         display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+
+        @media (min-width: 1024px) {
+            width: 75%;
+        }
     }
 
     &__image {
         width: 168px;
-        height: 100%;
+        height: 178px;
+        margin: 0 auto;
         background-color: #f3f3f3;
+
+        @media (min-width: 1024px) {
+            margin: 0;
+        }
     }
 
     &__inner {
-        /*flex: 1;*/
-        width: 670px;
+        /*width: 670px;*/
+        width: 100%;
         padding: 15px 0 0 35px;
+
+        @media (min-width: 1024px) {
+            width: calc(100% - 168px);
+        }
     }
 
     &__header {
@@ -60,6 +89,7 @@
 
     &__text {
         display: flex;
+        flex-wrap: wrap;
         margin-bottom: 20px;
     }
 
@@ -73,17 +103,22 @@
 
     &__doc-types {
         display: flex;
+        flex-wrap: wrap;
         margin: 0 0 14px;
         padding: 0;
         color: #383838;
     }
 
     &__doc-type {
-        margin-right: 10px;
+        margin: 0 10px 10px 0;
         padding: 0 22px;
         border-radius: 16px;
         line-height: 32px;
         background-color: #def7ec;
+
+        @media (min-width: 1024px) {
+            margin-bottom: 0;
+        }
     }
 
     &__participants-cnt {
@@ -91,8 +126,20 @@
     }
 
     &__aside {
-        padding-top: 15px;
-        text-align: right;
+        /*width: 262px;*/
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+        padding-top: 30px;
+        text-align: left;
+
+        @media (min-width: 1024px) {
+            width: 25%;
+            padding-top: 15px;
+            justify-content: flex-end;
+            text-align: right;
+        }
     }
 
     &__price {
@@ -107,12 +154,16 @@
     }
 
     &__period {
-        margin-bottom: 50px;
+        margin-bottom: 20px;
 
         span {
             font-size: 1.125rem;
             font-weight: 700;
             color: #383838;
+        }
+
+        @media (min-width: 1024px) {
+            margin-bottom: 50px;
         }
     }
 

@@ -11,7 +11,9 @@ mixin header()
                 .header__auth
                     .header__signin
                         a(href="#").header__link.header__signin-link войти
-                        +signin()
+                        .header__form.signin__form
+                            +signin()
                     .header__signup
                         a(href="#").header__link.header__signup-link регистрация
-                        +signup()
+                        .header__form.signup__form
+                            +signup()

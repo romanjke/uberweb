@@ -2,12 +2,15 @@ mixin main-menu()
     - var menus = [{text: 'проектирование', link: '#', submenu: [{text: 'Заказать проектирование', link: '#'}, {text: 'Выбрать исполнителя', link: '#'}, {text: 'Заявки на пректирование', link: '#'}, {text: 'Создать тендер', link: '#'}, {text: 'Услуги сторонних организаций', link: '#'}, {text: 'Безопасная сделка', link: '#'}]}, {text: 'экспертизы', link: '#', submenu: [{text: 'Заказать экспертизу', link: '#'}, {text: 'Выбрать исполнителя', link: '#'}, {text: 'Создать тендер', link: '#'}, {text: 'Безопасная сделка', link: '#'}]}, {text: 'исполнители', link: '#', submenu: [{text: 'Заявки на пректирование', link: '#'}, {text: 'Безопасная сделка', link: '#'}]}];
 
     nav.main-menu
+        .main-menu__icon
+            +svg-icon('hamburger')
         ul.main-menu__list
             each list in menus
                 li.main-menu__item
                     a(href="#").header__link.main-menu__link= list.text
                     if list.submenu
-                        ul.main-menu__submenu
-                            each sublist in list.submenu
-                                li.main-menu__submenu-item
-                                    a(href="#").main-menu__submenu-link= sublist.text
+                        .main-menu__submenu-wrapper
+                            ul.main-menu__submenu
+                                each sublist in list.submenu
+                                    li.main-menu__submenu-item
+                                        a(href="#").main-menu__submenu-link= sublist.text

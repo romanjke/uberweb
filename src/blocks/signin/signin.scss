@@ -19,5 +19,15 @@
         color: #323944;
         text-align: center;
         text-decoration: none;
+        letter-spacing: 0;
+    }
+
+    &__form {
+        transform: translateX(50%);
+
+        @media (min-width: 768px) {
+            right: 0;
+            transform: none;
+        }
     }
 }

@@ -58,4 +58,15 @@
         height: 28px;
         fill: #bababa;
     }
+
+    &-hamburger {
+        width: 32px;
+        height: 32px;
+        cursor: pointer;
+
+        &:hover {
+            fill: darken(#fff, 20%);
+            stroke: darken(#fff, 20%);
+        }
+    }
 }

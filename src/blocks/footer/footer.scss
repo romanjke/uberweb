@@ -6,7 +6,17 @@
     }
 
     &__col {
-        margin-right: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 20px;
+
+        @media (min-width: 1200px) {
+            display: block;
+            width: auto;
+            margin: 0 50px 0 0;
+        }
     }
 
     &__logo {
@@ -15,7 +25,11 @@
 
     &__socials {
         display: flex;
-        margin-bottom: 24px;
+        margin-right: 22px;
+
+        @media (min-width: 1200px) {
+            margin: 0 0 24px;
+        }
     }
 
     &__icon {
@@ -53,9 +67,13 @@
     }
 
     &__submenu {
-        margin: 14px 0 0;
+        margin: 14px 0 35px;
         padding: 0;
         font-size: 0.875rem;
+
+        @media (min-width: 1200px) {
+            margin-bottom:0;
+        }
     }
 
     &__submenu-item {

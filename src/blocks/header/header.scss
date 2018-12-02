@@ -1,19 +1,42 @@
 .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     padding: 6px 0;
     background-color: $secondary-color;
-    box-shadow: 0 2px 10px 2px rgba(79, 80, 80, 0.19);
+    box-shadow: 0px 2px 4.75px 0.25px rgba(79, 80, 80, 0.19);
+    z-index: 1;
 
     &__inner {
-        /*justify-content: space-between;*/
+        justify-content: space-between;
         align-items: center;
+
+        @media (min-width: 1200px) {
+            justify-content: normal;
+        }
+    }
+
+    &__col {
+        display: flex;
+        width: 50%;
+        /*flex-wrap: wrap;*/
+        align-items: center;
+        justify-content: space-between;
     }
 
     &__logo {
-        margin-right: 35px;
+        @media (min-width: 1200px) {
+            margin-right: 35px;
+        }
     }
 
     &__main-menu {
-        margin-right: 52px;
+        z-index: 1;
+
+        @media (min-width: 1200px) {
+            margin-right: 52px;
+        }
     }
 
     &__link {
@@ -24,6 +47,7 @@
         line-height: 21px;
         text-decoration: none;
         text-transform: uppercase;
+        letter-spacing: 0;
 
         &:hover {
             background-color: $main-color;
@@ -31,13 +55,28 @@
     }
 
     &__main-search {
-        margin-right: 65px;
+        width: 100%;
+        margin: 10px 0;
+
+        @media (min-width: 768px) {
+            width: auto;
+            margin: 0;
+        }
+
+        @media (min-width: 1200px) {
+            margin-right: 64px;
+        }
     }
 
     &__auth {
         display: flex;
         font-size: 0.875rem;
         font-weight: 600;
+        margin: 10px auto;
+
+        @media (min-width: 768px) {
+            margin: 0;
+        }
     }
 
     &__signin {
@@ -45,10 +84,11 @@
         margin-right: 1px;
 
         &:hover {
-            .form {
-                opacity: 1;
+            .header__form {
+                /*opacity: 1;
                 visibility: visible;
-                overflow: visible;
+                overflow: visible;*/
+                display: block;
             }
         }
     }
@@ -57,11 +97,26 @@
         position: relative;
 
         &:hover {
-            .form {
-                opacity: 1;
+            .header__form {
+                /*opacity: 1;
                 visibility: visible;
-                overflow: visible;
+                overflow: visible;*/
+                display: block;
             }
         }
+    }
+
+    &__signup-link {
+        text-decoration: underline;
+        font-weight: 400;
+    }
+
+    &__form {
+        display: none;
+        position: absolute;
+        top: 21px;
+        right: -50%;
+        /*transform: translateX(50%);*/
+        padding-top: 11px;
     }
 }
