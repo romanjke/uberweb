@@ -1,5 +1,9 @@
 .performers {
-    padding: 80px 0 76px;
+    padding: 40px 0 45px;
+
+    @media (min-width: 1024px) {
+        padding: 80px 0 91px;
+    }
 
     &__button {
         width: 200px;
@@ -17,18 +21,27 @@
     }
 
     &__row {
-        margin-bottom: 15px;
-        justify-content: space-around;
+        justify-content: space-between;
+    }
 
-        @media (min-width: 1100px) {
-            justify-content: space-between;
+    &__col {
+        width: 100%;
+        margin-bottom: 15px;
+
+        @media (min-width: 768px) {
+            width: 50%;
+        }
+
+        @media (min-width: 1170px) {
+            width: auto;
         }
     }
 
     &__item {
         position: relative;
         width: 270px;
-        margin-bottom: 15px;
+        height: 100%;
+        margin: 0 auto;
         padding: 13px 11px 50px;
         border: 1px solid #f4f4f4;
         box-shadow: 0px 2px 25.23px 3.77px rgba(79, 80, 80, 0.08);

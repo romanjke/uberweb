@@ -2,7 +2,7 @@ mixin footer(data)
     footer.footer
         .container
             .row.footer__inner
-                .footer__col
+                .footer__info
                     .footer__logo
                         +svg-icon('logo-footer')
                     .footer__socials
@@ -16,9 +16,10 @@ mixin footer(data)
 
                 ul.row.footer__list
                     each item in data
-                        li.footer__item #[span.footer__item-title= item.header]
-                            ul.footer__submenu
-                                each subitem in item.items
-                                    li.footer__submenu-item
-                                        a(href="#").footer__submenu-link= subitem
+                        li.footer__item
+                            .footer__submenu-wrapper #[span.footer__item-title= item.header]
+                                ul.footer__submenu
+                                    each subitem in item.items
+                                        li.footer__submenu-item
+                                            a(href="#").footer__submenu-link= subitem
 

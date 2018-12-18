@@ -7,39 +7,27 @@ mixin performers(var1, var2)
             },
             {
                 "caption": "Топ лучших экспертов",
-                "content": "top-experts",
+                "content": "performers-tab",
                 "var": var1,
                 "status": "active"
             },
             {
                 "caption": "Топ лучших компаний",
-                "content": "top-companies",
+                "content": "performers-tab",
                 "var": var2,
                 "status": ''
             }
         )
 
-
-mixin top-experts(data)
+mixin performers-tab(data)
     each row in data
         .row.performers__row
             each item in row
-                article.performers__item
-                    .performers__image
-                        img(src="img/" + item.img alt="")
-                    .performers__inner
-                        header.performers__header= item.header
-                        p.performers__text= item.text
-                        footer.performers__footer На сайте #[span.performers__duration= item.footer]
-
-mixin top-companies(data)
-    each row in data
-        .row.performers__row
-            each item in row
-                article.performers__item
-                    .performers__image
-                        img(src="img/" + item.img alt="")
-                    .performers__inner
-                        header.performers__header= item.header
-                        p.performers__text= item.text
-                        footer.performers__footer На сайте #[span.performers__duration= item.footer]
+                .performers__col
+                    article.performers__item
+                        .performers__image
+                            img(src="img/" + item.img alt="")
+                        .performers__inner
+                            header.performers__header= item.header
+                            p.performers__text= item.text
+                            footer.performers__footer На сайте #[span.performers__duration= item.footer]

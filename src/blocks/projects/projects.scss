@@ -3,7 +3,7 @@
     background-color: #ebebeb;
 
     @media (min-width: 1024px) {
-        padding: 82px 0;
+        padding: 84px 0;
     }
 
     &__title {
@@ -39,17 +39,17 @@
 
     &__item {
         display: flex;
-        justify-content: space-between;
         flex-wrap: wrap;
+        justify-content: space-between;
         width: 100%;
         min-height: 226px;
         margin-bottom: 38px;
-        padding: 24px 33px 24px 22px;
-        box-shadow: 0px 2px 3.92px 0.08px rgba(79, 80, 80, 0.08);
+        padding: 24px 34px 24px 23px;
         background-color: #fff;
+        box-shadow: 0px 2px 3.92px 0.08px rgba(79, 80, 80, 0.08);
     }
 
-    &__col {
+    &__left-col {
         display: flex;
         flex-wrap: wrap;
         width: 100%;
@@ -70,13 +70,14 @@
         }
     }
 
-    &__inner {
+    &__main {
         /*width: 670px;*/
         width: 100%;
-        padding: 15px 0 0 35px;
+        padding-top: 15px;
 
         @media (min-width: 1024px) {
             width: calc(100% - 168px);
+            padding-left: 35px;
         }
     }
 
@@ -104,7 +105,7 @@
     &__doc-types {
         display: flex;
         flex-wrap: wrap;
-        margin: 0 0 14px;
+        margin: 0 0 4px;
         padding: 0;
         color: #383838;
     }
@@ -115,17 +116,13 @@
         border-radius: 16px;
         line-height: 32px;
         background-color: #def7ec;
-
-        @media (min-width: 1024px) {
-            margin-bottom: 0;
-        }
     }
 
     &__participants-cnt {
         color: #a6a6aa;
     }
 
-    &__aside {
+    &__right-col {
         /*width: 262px;*/
         display: flex;
         flex-wrap: wrap;
